@@ -1,0 +1,19 @@
+server:
+  listen: ":10000"
+  listen_env: "TGNAS_LISTEN"
+auth:
+  region: "us-east-1"
+  credentials:
+    - access_key: "111a48b765542cfc742c"
+      secret_key_env: "TGNAS_SECRET_KEY"
+telegram:
+  bot_token_env: "TGNAS_TELEGRAM_BOT_TOKEN"
+  timeout: "120s"
+metadata:
+  sqlite_path: "/var/tgnas/9bb4db9afd44b70893a5.sqlite"
+  sqlite_path_env: "TGNAS_SQLITE_PATH"
+buckets:
+  06dce6d83b0be79c62e1:
+    chat_id: "${TGNAS_TELEGRAM_CHAT_ID}"
+webdav:
+  prefix: "/dav/"
