@@ -10,8 +10,8 @@ telegram:
   bot_token_env: "TGNAS_TELEGRAM_BOT_TOKEN"
   timeout: "120s"
 metadata:
-  sqlite_path: "/var/tgnas/9bb4db9afd44b70893a5.sqlite"
-  sqlite_path_env: "TGNAS_SQLITE_PATH"
+  driver: "postgres"
+  postgres_url_env: "TGNAS_POSTGRES_URL"
 buckets:
   06dce6d83b0be79c62e1:
     chat_id: "${TGNAS_TELEGRAM_CHAT_ID}"
